@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  background: black;
+}
+
+.container {
+  width: 100%;
+}
+
+.inner-container {
+  background-image: url("https://cdn.vox-cdn.com/thumbor/QiRFL14R4fy4lWj76A0Wmk4FS3Q=/0x0:2040x1360/1200x800/filters:focal(807x264:1133x590)/cdn.vox-cdn.com/uploads/chorus_image/image/62419018/SpiderVerse_cropped.0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 4rem;
+  height: 500px;
+  max-width: 100%;
+  filter: brightness(100%);
+}
+
+.movie-info {
+  color: white;
+}
+.movie-meta {
+  color: white;
+}
+
+.thumbnail-gallery-wrapper {
+  color: white;
+  padding: 1rem 0 0 0;
+  max-width: 100%;
+  margin-left: 4rem;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.thumbnail-gallery img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  filter: brightness(100%);
+  transition: ease .3s;
+  cursor: pointer;
+}
+
+.colorblock {
+  background: black;
+  height: 200px;
+}
+
+/* Color Styles */
+
+.logo-small {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.movie {
+  font-size: .8em;
+  letter-spacing: 10px;
+}
+
+.movie-info h1 {
+  letter-spacing: 8px;
+}
+
+.movie-info i {
+  color: red;
+  font-size: 3rem;
+  display: inline-block;
+  margin-left: .5rem;
+  text-align: center;
+  vertical-align: -7px;
+}
+
+.movie-meta {
+  display: flex;
+  font-size: .8rem;
+}
+
+.movie-meta span {
+  margin: 0 1rem .4rem 0;
+}
+
+.movie-meta .match {
+  color:  #00ffbf;
+}
+
+.movie-meta .rating {
+  background: #666666;
+  padding: 0 .4rem;
+}
+
+.movie-meta .hd,
+.movie-meta .sound {
+  border: 1px solid lightgray;
+  padding: 0 .4rem;
+}
+
+.summary {
+  padding: 2rem 0;
+  line-height: 1.6;
+  width: 80%;
+}
+
+.logo-large {
+  padding: 3rem 2rem;
+  text-align: right;
+}
+
+/* Hover Style */
+
+.thumbnail-gallery img:hover {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+
+/* Media Style */
+
+@media screen and (max-width: 700px) {
+  .inner-container {
+    height: 700px;
+  }
+
+  .summary {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .thumbnail-gallery-wrapper {
+    margin-left: 0;
+  }
+
+  .thumbnail-item img {
+    margin: 1rem;
+    width: 80x;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .movie-info h1,
+  .movie-info h1 i {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+  }
+  .movie-meta span {
+    font-size: .6rem;
+  }
+
+}
